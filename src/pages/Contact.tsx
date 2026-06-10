@@ -19,7 +19,7 @@ export default function ContactPage() {
     {
       name: "Direct Email Enquiries",
       value: "dhruvvarshney0011@gmail.com",
-      url: "mailto:dhruvvarshney0011@gmail.com",
+      url: "https://mail.google.com/mail/?view=cm&fs=1&to=dhruvvarshney0011@gmail.com",
       icon: Mail,
       color: "text-blue-600",
       bgColor: "bg-blue-50"
@@ -27,7 +27,7 @@ export default function ContactPage() {
     {
       name: "Professional LinkedIn Network",
       value: "linkedin.com/in/dhruv-ai",
-      url: "https://linkedin.com",
+      url: "https://www.linkedin.com/in/dhruv-varshney-714280331/",
       icon: Linkedin,
       color: "text-blue-700",
       bgColor: "bg-slate-50"
@@ -35,15 +35,15 @@ export default function ContactPage() {
     {
       name: "Open Source Activity hub",
       value: "github.com/dhruv-ai",
-      url: "https://github.com",
+      url: "https://github.com/dhruv96752",
       icon: Github,
       color: "text-slate-900",
       bgColor: "bg-slate-50"
     },
     {
       name: "WhatsApp Connection Channels",
-      value: "+91 99999 00000",
-      url: "https://wa.me/919999900000?text=Hi%20Dhruv,%20viewed%2520your%2520CS%2520AI%2520Portfolio!",
+      value: "+91 7906499302",
+      url: "https://wa.me/917906499302?text=Hi Dhruv, viewed your CS-AI Portfolio!",
       icon: MessageCircle,
       color: "text-emerald-500",
       bgColor: "bg-emerald-50/50"
@@ -87,7 +87,7 @@ export default function ContactPage() {
     <PageWrapper>
       <section className="py-24 bg-white relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
+
           {/* Section Heading */}
           <div className="max-w-3xl mb-16 space-y-4">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-teal-50 border border-teal-100 rounded-full text-teal-700 text-xs font-mono font-semibold">
@@ -195,11 +195,10 @@ export default function ContactPage() {
                           placeholder="Dr. Sarah Jenkins"
                           value={formData.name}
                           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                          className={`w-full px-4 py-2 text-xs border bg-white rounded-lg focus:outline-hidden transition-all text-slate-800 ${
-                            formErrors.name 
-                              ? "border-red-400 focus:border-red-500" 
-                              : "border-slate-200 focus:border-blue-500"
-                          }`}
+                          className={`w-full px-4 py-2 text-xs border bg-white rounded-lg focus:outline-hidden transition-all text-slate-800 ${formErrors.name
+                            ? "border-red-400 focus:border-red-500"
+                            : "border-slate-200 focus:border-blue-500"
+                            }`}
                         />
                         {formErrors.name && (
                           <p className="text-[10px] text-red-500 flex items-center gap-1">
@@ -219,11 +218,10 @@ export default function ContactPage() {
                           placeholder="jenkins@institution.org"
                           value={formData.email}
                           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                          className={`w-full px-4 py-2 text-xs border bg-white rounded-lg focus:outline-hidden transition-all text-slate-800 ${
-                            formErrors.email 
-                              ? "border-red-400 focus:border-red-500" 
-                              : "border-slate-200 focus:border-blue-500"
-                          }`}
+                          className={`w-full px-4 py-2 text-xs border bg-white rounded-lg focus:outline-hidden transition-all text-slate-800 ${formErrors.email
+                            ? "border-red-400 focus:border-red-500"
+                            : "border-slate-200 focus:border-blue-500"
+                            }`}
                         />
                         {formErrors.email && (
                           <p className="text-[10px] text-red-500 flex items-center gap-1">
@@ -262,11 +260,10 @@ export default function ContactPage() {
                         placeholder="Enter details of your project context, timeline, and stack requirements..."
                         value={formData.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                        className={`w-full px-4 py-3 text-xs border bg-white rounded-lg focus:outline-hidden transition-all resize-none text-slate-800 ${
-                          formErrors.message 
-                            ? "border-red-400 focus:border-red-500" 
-                            : "border-slate-200 focus:border-blue-500"
-                        }`}
+                        className={`w-full px-4 py-3 text-xs border bg-white rounded-lg focus:outline-hidden transition-all resize-none text-slate-800 ${formErrors.message
+                          ? "border-red-400 focus:border-red-500"
+                          : "border-slate-200 focus:border-blue-500"
+                          }`}
                       />
                       {formErrors.message && (
                         <p className="text-[10px] text-red-500 flex items-center gap-1">

@@ -1,8 +1,8 @@
 import { Project, Skill, Experience, Certificate, Achievement, Stats } from "./types";
 
 export const DEV_STATS: Stats = {
-  gpa: "9.24 / 10",
-  projectsCount: 12,
+  gpa: "8.24 / 10",
+  projectsCount: 5,
   certificationsCount: 8,
   commitsCount: 642,
 };

@@ -18,7 +18,7 @@ export default function Contact() {
     {
       name: "Direct Email Enquiries",
       value: "dhruvvarshney0011@gmail.com",
-      url: "mailto:dhruvvarshney0011@gmail.com",
+      url: "https://mail.google.com/mail/?view=cm&fs=1&to=dhruvvarshney0011@gmail.com",
       icon: Mail,
       color: "text-blue-600",
       bgColor: "bg-blue-50"
@@ -26,7 +26,7 @@ export default function Contact() {
     {
       name: "Professional LinkedIn Network",
       value: "linkedin.com/in/dhruv-ai",
-      url: "https://linkedin.com",
+      url: "https://www.linkedin.com/in/dhruv-varshney-714280331/",
       icon: Linkedin,
       color: "text-blue-700",
       bgColor: "bg-slate-50"
@@ -34,15 +34,15 @@ export default function Contact() {
     {
       name: "Open Source Activity hub",
       value: "github.com/dhruv-ai",
-      url: "https://github.com",
+      url: "https://github.com/dhruv96752",
       icon: Github,
       color: "text-slate-900",
       bgColor: "bg-slate-50"
     },
     {
       name: "WhatsApp Consultation Protocol",
-      value: "+91 99999 00000",
-      url: "https://wa.me/919999900000?text=Hi%20Dhruv,%20viewed%20your%20CS%20AI%20Portfolio!",
+      value: "+91 7906499302",
+      url: "https://wa.me/7906499302?text=Hi%20Dhruv,%20viewed%20your%20CS%20AI%20Portfolio!",
       icon: MessageCircle,
       color: "text-emerald-500",
       bgColor: "bg-emerald-50/50"
@@ -85,7 +85,7 @@ export default function Contact() {
   return (
     <section id="contact" className="py-24 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-teal-50 border border-teal-100 rounded-full text-teal-700 text-xs font-mono font-semibold">
@@ -108,7 +108,7 @@ export default function Contact() {
               Direct Protocols
             </h3>
             <p className="text-xs text-slate-500 max-w-sm leading-relaxed">
-              Recruiters are requested to initiate secure connections. Responses are typically dispatched 
+              Recruiters are requested to initiate secure connections. Responses are typically dispatched
               within 4 business hours.
             </p>
 
@@ -160,7 +160,7 @@ export default function Contact() {
                     Message Dispatched Successfully!
                   </h4>
                   <p className="text-xs text-emerald-600 leading-relaxed max-w-sm mx-auto">
-                    A secure transmission has been logged. Thank you for your review; Dhruv will connect 
+                    A secure transmission has been logged. Thank you for your review; Dhruv will connect
                     back in short duration.
                   </p>
                   <button
@@ -185,11 +185,10 @@ export default function Contact() {
                         placeholder="Dr. Sarah Jenkins"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className={`w-full px-4 py-2 text-xs border bg-white rounded-lg focus:outline-hidden transition-all ${
-                          formErrors.name 
-                            ? "border-red-400 focus:border-red-500" 
-                            : "border-slate-200 focus:border-blue-500"
-                        }`}
+                        className={`w-full px-4 py-2 text-xs border bg-white rounded-lg focus:outline-hidden transition-all ${formErrors.name
+                          ? "border-red-400 focus:border-red-500"
+                          : "border-slate-200 focus:border-blue-500"
+                          }`}
                       />
                       {formErrors.name && (
                         <p className="text-[10px] text-red-500 flex items-center gap-1">
@@ -209,11 +208,10 @@ export default function Contact() {
                         placeholder="jenkins@institution.org"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className={`w-full px-4 py-2 text-xs border bg-white rounded-lg focus:outline-hidden transition-all ${
-                          formErrors.email 
-                            ? "border-red-400 focus:border-red-500" 
-                            : "border-slate-200 focus:border-blue-500"
-                        }`}
+                        className={`w-full px-4 py-2 text-xs border bg-white rounded-lg focus:outline-hidden transition-all ${formErrors.email
+                          ? "border-red-400 focus:border-red-500"
+                          : "border-slate-200 focus:border-blue-500"
+                          }`}
                       />
                       {formErrors.email && (
                         <p className="text-[10px] text-red-500 flex items-center gap-1">
@@ -252,11 +250,10 @@ export default function Contact() {
                       placeholder="Enter details of your project context, timeline, and stack requirements..."
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className={`w-full px-4 py-3 text-xs border bg-white rounded-lg focus:outline-hidden transition-all resize-none ${
-                        formErrors.message 
-                          ? "border-red-400 focus:border-red-500" 
-                          : "border-slate-200 focus:border-blue-500"
-                      }`}
+                      className={`w-full px-4 py-3 text-xs border bg-white rounded-lg focus:outline-hidden transition-all resize-none ${formErrors.message
+                        ? "border-red-400 focus:border-red-500"
+                        : "border-slate-200 focus:border-blue-500"
+                        }`}
                     />
                     {formErrors.message && (
                       <p className="text-[10px] text-red-500 flex items-center gap-1">

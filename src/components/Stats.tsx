@@ -49,7 +49,7 @@ export default function StatsSection() {
     {
       label: "Cumulative CGPA",
       desc: "B.Tech Computer Science",
-      endValue: 9.24,
+      endValue: 8.24,
       decimals: 2,
       suffix: "/10",
       icon: GraduationCap,
@@ -59,7 +59,7 @@ export default function StatsSection() {
     {
       label: "Innovative Projects",
       desc: "Full Stack & AI Core",
-      endValue: 12,
+      endValue: 5,
       decimals: 0,
       suffix: "+",
       icon: FolderHeart,

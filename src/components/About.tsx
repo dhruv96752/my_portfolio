@@ -6,11 +6,11 @@ export default function About() {
     {
       type: "education",
       title: "Bachelor of Technology in Computer Science & Engineering",
-      institution: "Vellore Institute of Technology (VIT)",
-      period: "2022 - 2026 (Expected)",
+      institution: "Greater Noida Institute of Technology (GNIOT)",
+      period: "2024 - 2028 (Expected)",
       details: [
         "Specialization: Artificial Intelligence and Machine Learning Core.",
-        "Academic standing: 9.24 CGPA through 6 semesters.",
+        "Academic standing: 8.24 CGPA through 4 semesters.",
         "Relevant Coursework: Advanced Algorithms, Deep Learning, Database Systems, Operating Systems, Java Programming."
       ],
       icon: GraduationCap,

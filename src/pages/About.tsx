@@ -7,11 +7,11 @@ export default function About() {
     {
       type: "education",
       title: "Bachelor of Technology in Computer Science & Engineering",
-      institution: "Vellore Institute of Technology (VIT)",
-      period: "2022 - 2026 (Expected)",
+      institution: "Greater Noida Institute of Technology (GNIOT)",
+      period: "2024 - 2028 (Expected)",
       details: [
-        "Specialization: Artificial Intelligence and Machine Learning Core.",
-        "Academic standing: 9.24 CGPA through 6 semesters (Top Tier of cohort).",
+        "Specialization: Artificial Intelligence.",
+        "Academic standing: 8.24 CGPA through 4 semesters (Top Tier of cohort).",
         "Relevant Coursework: Advanced Algorithms, Deep Learning architectures, Object Oriented Programming, Database Systems, Operating Systems, Java Optimization."
       ],
       icon: GraduationCap,
@@ -58,7 +58,7 @@ export default function About() {
               Fusing Algorithmic Logic with Autonomous Intelligence
             </h1>
             <p className="text-sm sm:text-lg text-slate-500 max-w-2xl">
-              I am a B.Tech Computer Science student at Vellore Institute of Technology, specializing in AI & ML. My journey revolves around translating abstract mathematical equations into production-ready runtime loops.
+              I am a B.Tech Computer Science student at Greater Noida Institute of Technology, specializing in CSE-AI. My journey revolves around translating abstract mathematical equations into production-ready runtime loops.
             </p>
           </div>
 
@@ -142,7 +142,7 @@ export default function About() {
               <div className="p-6 rounded-2xl bg-slate-950 text-slate-100 space-y-4 border border-slate-800 shadow-lg relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-24 h-24 bg-teal-500/10 rounded-full blur-xl pointer-events-none" />
                 <div className="absolute bottom-0 left-0 w-32 h-32 bg-blue-500/5 rounded-full blur-2xl pointer-events-none" />
-                
+
                 <div className="flex items-center gap-2 relative z-10">
                   <Award className="h-4 w-4 text-teal-400" />
                   <span className="font-mono text-[10px] font-bold text-slate-400 uppercase tracking-widest">

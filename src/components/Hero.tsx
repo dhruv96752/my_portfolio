@@ -11,7 +11,7 @@ export default function Hero({ scrollToSection }: HeroProps) {
     "AI/ML Engineer",
     "Java Developer",
     "Problem Solver",
-    "Building Real-World Solutions",
+    "Software Developer",
   ];
 
   const [currentWordIdx, setCurrentWordIdx] = useState(0);
@@ -126,8 +126,8 @@ export default function Hero({ scrollToSection }: HeroProps) {
               transition={{ duration: 1.0, ease: [0.16, 1, 0.3, 1], delay: 0.4 }}
               className="text-sm sm:text-base lg:text-lg xl:text-xl text-slate-600 max-w-xl lg:max-w-2xl xl:max-w-3xl mx-auto lg:mx-0 leading-relaxed font-sans"
             >
-              Currently pursuing my B.Tech in Computer Science and Engineering. I bridge 
-              computational logic with high-performance ML pipelines, crafting robust algorithms 
+              Currently pursuing my B.Tech in Computer Science and Engineering. I bridge
+              computational logic with high-performance ML pipelines, crafting robust algorithms
               in Java and training intelligent networks in Python.
             </motion.p>
 
@@ -149,13 +149,9 @@ export default function Hero({ scrollToSection }: HeroProps) {
 
               <a
                 id="hero-resume-download"
-                href="#download-resume"
-                onClick={(e) => {
-                  e.preventDefault();
-                  alert(
-                    "ATS-Optimized Resume Download Initiated:\nIn a production environment, this triggers a direct download of 'Dhruv_Varshney_Resume.pdf' matching recruiters' ATS formats."
-                  );
-                }}
+                href="/resume.pdf"
+                download="Dhruv_Varshney_Resume.pdf"
+                target="_blank"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 lg:px-8 lg:py-4 border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 font-semibold text-sm lg:text-base xl:text-lg rounded-full transition-colors cursor-pointer shadow-xs"
               >
                 <Download className="h-4 w-4 text-slate-400" />
@@ -173,7 +169,7 @@ export default function Hero({ scrollToSection }: HeroProps) {
               <span className="text-xs font-mono text-slate-400">CONNECT PROTOCOL:</span>
               <a
                 id="hero-github-link"
-                href="https://github.com"
+                href="https://github.com/dhruv96752"
                 target="_blank"
                 rel="noreferrer"
                 className="p-2 border border-slate-100 rounded-full bg-slate-50 hover:bg-slate-100 text-slate-600 hover:text-slate-900 transition-colors"
@@ -183,7 +179,7 @@ export default function Hero({ scrollToSection }: HeroProps) {
               </a>
               <a
                 id="hero-linkedin-link"
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/dhruv-varshney-714280331/"
                 target="_blank"
                 rel="noreferrer"
                 className="p-2 border border-slate-100 rounded-full bg-slate-50 hover:bg-slate-100 text-slate-600 hover:text-slate-900 transition-colors"
@@ -193,7 +189,7 @@ export default function Hero({ scrollToSection }: HeroProps) {
               </a>
               <a
                 id="hero-email-link"
-                href="mailto:dhruvvarshney0011@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=dhruvvarshney0011@gmail.com"
                 className="p-2 border border-slate-100 rounded-full bg-slate-50 hover:bg-slate-100 text-slate-600 hover:text-slate-900 transition-colors"
                 title="Send Email"
               >
@@ -242,7 +238,7 @@ export default function Hero({ scrollToSection }: HeroProps) {
                     <div className="flex items-center gap-3 text-[9px] font-mono text-slate-400 mt-1">
                       <span>B.Tech CSE</span>
                       <span>•</span>
-                      <span>CGPA: 9.24</span>
+                      <span>CGPA: 8.24</span>
                     </div>
                   </div>
                 </div>
