@@ -1,0 +1,224 @@
+@import "tailwindcss";
+
+@keyframes cursor-blink {
+  0%, 49% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  animation: cursor-blink 1s infinite;
+}
+
+/* -------------------------------------------------------------------------
+   GLOBAL DESKTOP SCALING - SCREEN BREAKPOINTS FOR PREMIUM WIDESCREEN LOOK
+   ------------------------------------------------------------------------- */
+
+/* Large screens and standard laptops (>= 1024px) */
+@media (min-width: 1024px) {
+  .max-w-7xl {
+    max-width: 1380px !important;
+  }
+}
+
+/* Widescreen Laptops & Small Desktops (>= 1440px) */
+@media (min-width: 1440px) {
+  /* Scale containers to feel wide and immersive */
+  .max-w-7xl {
+    max-width: 1536px !important;
+  }
+  .max-w-4xl {
+    max-width: 1100px !important;
+  }
+  .max-w-3xl {
+    max-width: 960px !important;
+  }
+  .max-w-2xl {
+    max-width: 820px !important;
+  }
+  .max-w-xl {
+    max-width: 720px !important;
+  }
+
+  /* Scale typography proportionally to preserve visual hierarchy */
+  .text-xs {
+    font-size: 0.875rem !important; /* 12px -> 14px */
+  }
+  .text-sm {
+    font-size: 1rem !important; /* 14px -> 16px */
+  }
+  .text-base {
+    font-size: 1.125rem !important; /* 16px -> 18px */
+  }
+  .text-lg {
+    font-size: 1.25rem !important; /* 18px -> 20px */
+  }
+  .text-xl {
+    font-size: 1.5rem !important; /* 20px -> 24px */
+  }
+  .text-2xl {
+    font-size: 1.875rem !important; /* 24px -> 30px */
+  }
+  .text-3xl {
+    font-size: 2.25rem !important; /* 30px -> 36px */
+  }
+  .text-4xl {
+    font-size: 3rem !important; /* 36px -> 48px */
+  }
+  .text-5xl {
+    font-size: 3.75rem !important; /* 48px -> 60px */
+  }
+  .text-6xl {
+    font-size: 4.5rem !important; /* 72px */
+  }
+  .text-md {
+    font-size: 1.125rem !important;
+  }
+  .text-\[9px\] {
+    font-size: 0.75rem !important; /* 9px -> 12px */
+  }
+  .text-\[10px\] {
+    font-size: 0.8125rem !important; /* 10px -> 13px */
+  }
+  .text-\[11px\] {
+    font-size: 0.875rem !important; /* 11px -> 14px */
+  }
+
+  /* Scale inner card padding */
+  .p-4 { padding: 1.25rem !important; }
+  .p-5 { padding: 1.50rem !important; }
+  .p-6 { padding: 2rem !important; }
+  .p-8 { padding: 2.5rem !important; }
+  .px-4 { padding-left: 1.25rem !important; padding-right: 1.25rem !important; }
+  .sm\:p-8 { padding: 2.5rem !important; }
+  .sm\:p-12 { padding: 3.5rem !important; }
+
+  /* Scale section padding */
+  .py-12 { padding-top: 4.5rem !important; padding-bottom: 4.5rem !important; }
+  .py-20 { padding-top: 7rem !important; padding-bottom: 7rem !important; }
+  .py-24 { padding-top: 8rem !important; padding-bottom: 8rem !important; }
+
+  /* Scale grid gap */
+  .gap-4 { gap: 1.5rem !important; }
+  .gap-6 { gap: 2rem !important; }
+  .gap-8 { gap: 2.5rem !important; }
+  .gap-12 { gap: 3.5rem !important; }
+
+  /* Scale card heights / image containers */
+  .h-44 { height: 14rem !important; }
+  .h-48 { height: 16rem !important; }
+
+  /* Lucide icon scaling */
+  svg.h-3 { height: 1rem !important; width: 1rem !important; }
+  svg.h-4 { height: 1.25rem !important; width: 1.25rem !important; }
+  svg.h-5 { height: 1.5rem !important; width: 1.5rem !important; }
+  svg.h-6 { height: 1.75rem !important; width: 1.75rem !important; }
+  svg.h-10 { height: 3rem !important; width: 3rem !important; }
+
+  /* Button sizing updates */
+  .px-6 { padding-left: 2rem !important; padding-right: 2rem !important; }
+  .py-3 { padding-top: 1rem !important; padding-bottom: 1rem !important; }
+}
+
+/* Ultra-Widescreen & 4K Desktops (>= 1920px) */
+@media (min-width: 1920px) {
+  /* Scale containers further */
+  .max-w-7xl {
+    max-width: 1720px !important;
+  }
+  .max-w-4xl {
+    max-width: 1300px !important;
+  }
+  .max-w-3xl {
+    max-width: 1100px !important;
+  }
+  .max-w-2xl {
+    max-width: 960px !important;
+  }
+  .max-w-xl {
+    max-width: 840px !important;
+  }
+
+  /* Scale typography further */
+  .text-xs {
+    font-size: 1rem !important; /* 12px -> 16px */
+  }
+  .text-sm {
+    font-size: 1.125rem !important; /* 14px -> 18px */
+  }
+  .text-base {
+    font-size: 1.25rem !important; /* 16px -> 20px */
+  }
+  .text-lg {
+    font-size: 1.5rem !important; /* 18px -> 24px */
+  }
+  .text-xl {
+    font-size: 1.75rem !important; /* 20px -> 28px */
+  }
+  .text-2xl {
+    font-size: 2.25rem !important; /* 24px -> 36px */
+  }
+  .text-3xl {
+    font-size: 2.75rem !important; /* 30px -> 44px */
+  }
+  .text-4xl {
+    font-size: 3.5rem !important; /* 36px -> 56px */
+  }
+  .text-5xl {
+    font-size: 4.5rem !important; /* 48px -> 72px */
+  }
+  .text-6xl {
+    font-size: 5.5rem !important; /* 88px */
+  }
+  .text-md {
+    font-size: 1.25rem !important;
+  }
+  .text-\[9px\] {
+    font-size: 0.875rem !important;
+  }
+  .text-\[10px\] {
+    font-size: 0.9375rem !important;
+  }
+  .text-\[11px\] {
+    font-size: 1rem !important;
+  }
+
+  /* Scale inner card padding */
+  .p-4 { padding: 1.5rem !important; }
+  .p-5 { padding: 1.75rem !important; }
+  .p-6 { padding: 2.25rem !important; }
+  .p-8 { padding: 3rem !important; }
+  .px-4 { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
+  .sm\:p-8 { padding: 3rem !important; }
+  .sm\:p-12 { padding: 4.5rem !important; }
+
+  /* Scale section padding */
+  .py-12 { padding-top: 6rem !important; padding-bottom: 6rem !important; }
+  .py-20 { padding-top: 8rem !important; padding-bottom: 8rem !important; }
+  .py-24 { padding-top: 10rem !important; padding-bottom: 10rem !important; }
+
+  /* Scale grid gap */
+  .gap-4 { gap: 2rem !important; }
+  .gap-6 { gap: 2.5rem !important; }
+  .gap-8 { gap: 3.5rem !important; }
+  .gap-12 { gap: 4.5rem !important; }
+
+  /* Scale card heights / image containers */
+  .h-44 { height: 16rem !important; }
+  .h-48 { height: 18rem !important; }
+
+  /* Lucide icon scaling */
+  svg.h-3 { height: 1.125rem !important; width: 1.125rem !important; }
+  svg.h-4 { height: 1.5rem !important; width: 1.5rem !important; }
+  svg.h-5 { height: 1.75rem !important; width: 1.75rem !important; }
+  svg.h-6 { height: 2rem !important; width: 2rem !important; }
+  svg.h-10 { height: 3.5rem !important; width: 3.5rem !important; }
+
+  /* Button sizing updates */
+  .px-6 { padding-left: 2.5rem !important; padding-right: 2.5rem !important; }
+  .py-3 { padding-top: 1.25rem !important; padding-bottom: 1.25rem !important; }
+}
+
